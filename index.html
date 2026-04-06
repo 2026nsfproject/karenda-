@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Googleカレンダー</title>
+  <meta name="robots" content="index,follow" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .calendar-wrap {
+      width: 95%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0 0 16px;
+      text-align: center;
+    }
+
+    .calendar-frame {
+      width: 100%;
+      height: 700px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .calendar-frame {
+        height: 500px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar-wrap">
+    <h1>Googleカレンダー</h1>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=f4cf89fe14ded948bcc85eb033cbd3e2d0b87532874552c93404cae44ab63250%40group.calendar.google.com&ctz=Asia%2FTokyo"
+      class="calendar-frame"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
+  </div>
+</body>
+</html>
